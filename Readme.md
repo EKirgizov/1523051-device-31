@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгений Киргизов](https://up.htmlacademy.ru/htmlcss/31/user/1523051).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
