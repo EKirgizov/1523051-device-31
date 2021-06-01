@@ -3,36 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
 <header>
-  <a href="index.html">
-    <h1 id="top">Device</h1> <!--якорь для ссылки Device в footer-->
-  </a>
-    <form action="#" method="get">
-        <input type="search" placeholder="Поиск по сайту"> 
-    </form>
-  <ul>
-    <li><a href="#">Войти</a></li>
-    <li><a href="#">Сравнить</a></li>
-    <li><a href="#">Корзина</a></li>
-  </ul>
+    <a href="index.html">
+        <h1>Device</h1> <!--необходимо в дальнейшем скрыть-->
+        <img src="img/device-logo-black.png" alt="логотип device черный" id="top" width="163" height="35"><!--якорь для ссылки Device в footer-->
+      </a>
+        <form action="#" method="get">
+          <img src="img/search-ico.svg" alt="иконка поиск по сайту" width="13" height="13">
+            <input type="search" placeholder="Поиск по сайту"> 
+        </form>
+      <ul>
+        <li>
+          <img src="img/login-black-ico.svg" alt="иконка войти черная" width="8" height="9">
+          <a href="#">Войти</a>
+        </li>
+        <li>
+          <img src="img/compare-black-ico.svg" alt="иконка сравнить черная" width="8" height="8">
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <img src="img/basket-black-ico.svg" alt="иконка корзина черная" width="10" height="10">
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
   <nav>
     <ul>
-       <li><a href="#" class="down">Каталог товаров</a>
+        <li>
+          <a href="#" class="down">Каталог товаров</a>
+          <img src="img/sub-menu-ico.png" alt="иконка открыть субменю" width="15" height="15">
         <ul class="submenu">
           <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="monopod.html">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
           <li><a href="#">Фитнес-браслеты</a></li>
           <li><a href="#">Умные часы</a></li>
           <li><a href="#">Квадрокоптеры</a></li>
         </ul>
-       </li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="#contacts">Контакты</a></li>
-    </ul>
+        </li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
   </nav>
 </header>
 <main>
@@ -105,6 +121,8 @@
              <li>По типу</li>
              <li>По популярности</li>
          </ul>
+         <img src="img/up-arrow.svg" alt="иконка сортировка по возрастанию " width="10" height="11">
+         <img src="img/down-arrow.svg" alt="иконка сортировка по убыванию" width="10" height="11">
      </section>
  </section>
  <section>
@@ -113,7 +131,7 @@
              <a href="#">
              <h4>Любительская селфи-палка</h4>
              <p>
-                 <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
              </p>
              </a>
              <p>
@@ -124,7 +142,7 @@
             <a href="#">
             <h4>Профессиональная селфи-палка</h4>
             <p>
-                <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             </p>
             </a>
             <p>
@@ -135,7 +153,7 @@
             <a href="#">
             <h4>Непотопляемая селфи-палка</h4>
             <p>
-                <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             </p>
             </a>
             <p>
@@ -146,7 +164,8 @@
             <a href="#">
             <h4>Селфи-палка "Следуй за мной"</h4>
             <p>
-                <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка "Следуй за мной"">
+                <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+                <img src="img/shape-new-katalog.png" width="62" height="62" alt="Новинка">
             </p>
             </a>
             <p>
@@ -177,15 +196,24 @@
 </main>
 <footer>
     <a href="#top">
-      <h1>Device</h1> 
+      <img src="img/device-logo-yellow.png" alt="логотип device желтый" width="163" height="35">
     </a>
     <address id="contacts">Санкт-Петербург, набережная <br> <!--якорь для ссылки Контакты в Header-->
      реки Карповки, 5, литера П.
     </address>
     <ul>
-      <li><a href="#">Войти</a></li>
-      <li><a href="#">Сравнить</a></li>
-      <li><a href="#">Корзина</a></li>
+      <li>
+        <img src="img/login-yellow-ico.svg" alt="иконка войти желтая" width="8" height="9">
+        <a href="#">Войти</a>
+      </li>
+      <li>
+        <img src="img/compare-yellow-ico.svg" alt="иконка сравнить желтая" width="8" height="8">
+        <a href="#">Сравнить</a>
+      </li>
+      <li>
+        <img src="img/basket-yellow-ico.svg" alt="иконка корзина желтая" width="10" height="10">
+        <a href="#">Корзина</a>
+      </li>
     </ul>
     <nav>
       <ul>
@@ -197,16 +225,28 @@
     <a href="tel:+78005558628">+7-800-555-86-28</a>
     <ul class="social-list">
       <li>
-        <a href="#">Facebook</a>
+        <a href="#">
+          Facebook
+          <img src="img/facebook-ico.svg" alt="ссылка на странице device в facebook" width="32" height="32">
+        </a>
       </li>
       <li>
-        <a href="#">Instagram</a>
+        <a href="#">
+          Instagram
+          <img src="img/instagram-ico.svg" alt="ссылка на странице device в instagram" width="32" height="32">
+        </a>
       </li>
       <li>
-        <a href="#">Twitter</a>
+        <a href="#">
+          Twitter
+          <img src="img/twitter-ico.svg" alt="ссылка на странице device в twitter" width="32" height="32">
+        </a>
       </li>
     </ul>
-    <a href="https://htmlacademy.ru">HTML academy</a>
+    <a href="https://htmlacademy.ru">
+      HTML academy
+      <img src="img/logo_htmlacademy.png" alt="ссылка на страницу разработчика сайта Device" width="115" height="33">
+    </a>
   </footer>
 </body>
 </html>
