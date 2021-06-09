@@ -1,40 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
-  <body>
-<header>
-  <a>
-    <h1>Device</h1> <!--необходимо в дальнейшем скрыть-->
+  <body class="main-body">
+<header class="main-header">
+  <a class="main-header-logo">
+    <h1 class="element-invisible">Device</h1> <!--необходимо в дальнейшем скрыть-->
     <img src="img/device-logo-black.png" alt="логотип device черный" id="top" width="163" height="35"><!--якорь для ссылки Device в footer-->
   </a>
-    <form action="#" method="get">
+    <form class="main-header-search" action="#" method="get">
       <img src="img/search-ico.svg" alt="иконка поиск по сайту" width="13" height="13">
-        <input type="search" placeholder="Поиск по сайту"> 
+        <input type="text" placeholder="Поиск по сайту"> 
     </form>
-  <ul>
+  <ul class="header-link-list">
     <li>
       <img src="img/login-black-ico.svg" alt="иконка войти черная" width="8" height="9">
-      <a href="#">Войти</a>
+      <a class="header-link-list-item" href="#">Войти</a>
     </li>
     <li>
       <img src="img/compare-black-ico.svg" alt="иконка сравнить черная" width="8" height="8">
-      <a href="#">Сравнить</a>
+      <a class="header-link-list-item" href="#">Сравнить</a>
     </li>
     <li>
       <img src="img/basket-black-ico.svg" alt="иконка корзина черная" width="10" height="10">
-      <a href="#">Корзина</a>
+      <a class="header-link-list-item" href="#">Корзина</a>
     </li>
   </ul>
-  <nav>
-    <ul>
+  <nav class="main-navigation">
+    <ul class="site-navigation">
       <li>
-        <a href="#" class="down">Каталог товаров</a>
+        <a href="#" class="down-submenu">Каталог товаров</a>
         <img src="img/sub-menu-ico.png" alt="иконка открыть субменю" width="15" height="15">
       <ul class="submenu">
         <li><a href="#">Виртуальная реальность</a></li>
@@ -52,81 +55,94 @@
   </nav>
 </header>
 <main>
-<section>
+<section class="slider">
   <figure>
   <a href="#">
     <img src="img/slider-quadrocopter-inspire.png" width="526" height="334" alt="Квадрокоптер инспайр в карусели">
   </a>
   </figure>
-  <h3>01</h3>
-  <h3>Порхает как бабочка,<br> жалит как пчела!</h3> 
-  <p>
-    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+  <h3 class="slider-numeration">01</h3>
+  <h3 class="slider-item-tagline">Порхает как бабочка,<br> жалит как пчела!</h3> 
+  <p class="slider-item-description">
+    Этот обычный, на первый взгляд, квадрокоптер <br> оснащен мощным лазером, замаскированным под стандартную камеру.
   </p>
-  <h3>Подробнее</h3>
+  <h3 class="button-more-about-product">Подробнее</h3>
   <table>
-    <tr>
+    <tr class="about-product-indicator">
       <td>800 м</td>
       <td>50 м</td>
     </tr>
-    <tr>
+    <tr class="about-product-indicator-name">
       <td>Дальность полета</td>
       <td>Радиус поражения</td>
     </tr>
   </table>
 </section>
-<section>
-  <ul>
-    <li>
+<section class="product">
+  <ul class="product-category">
+    <li class="product-item">
       <a href="#">
-        <h3>Виртуальная реальность</h3>
+        <h3>Виртуальная <br>реальность</h3>
         <p>
-          <img src="img/vr-ico.svg" width="160" height="160" alt="Виртуальная реальность иконка">
+          <a class="block-vr"></a>
         </p>
     </li>
-    <li>
+    <li class="product-item">
       <a href="monopod.html">
-        <h3>Моноподы для селфи</h3>
+        <h3>Моноподы <br>для селфи</h3>
         <p>
-          <img src="img/monopod-ico.svg" width="160" height="160" alt="Моноподы для селфи иконка">
+          <a class="block-monopod" href="monopod.html">
+          </a>
         </p>
     </li>
-    <li>
+    <li class="product-item">
       <a href="#">
         <h3>Экшн-камеры</h3>
         <p>
-          <img src="img/actioncam-ico.svg" width="160" height="160" alt="Экшн-камеры иконка">
+          <a class="block-actioncam" href="#"></a>
         </p>
     </li>
-    <li>
+    <li class="product-item">
       <a href="f#">
         <h3>Фитнес-браслеты</h3>
         <p>
-          <img src="img/fitness-ico.svg" width="160" height="160" alt="Фитнес-браслеты иконка">
+          <a class="block-fitness" href="#"></a>
         </p>
     </li>
-    <li>
+    <li class="product-item">
       <a href="#">
         <h3>Умные часы</h3>
         <p>
-          <img src="img/smart-watch-ico.svg" width="160" height="160" alt="Умные часы иконка">
+          <a class="block-smart-watch" href="#"></a>
         </p>
     </li>
-    <li>
+    <li class="product-item">
       <a href="#">
         <h3>Квадрокоптеры</h3>
         <p>
-          <img src="img/qadcopter-ico.svg" width="160" height="160" alt="Квадрокоптеры иконка">
+          <a class="block-qadcopter" href="#"></a>
         </p>
     </li>
   </ul>
 </section>
-<section>
-<ul>
-  <li><a>Доставка</a></li>
-  <li><a>Гарантия</a></li>
-  <li><a>Кредит</a></li>
+<section class="services">
+<ul class="services-list">
+  <li class="services-item-button">
+    <div class="block-div">
+      <a class="button-block">Доставка</a>
+    </div>
+  </li>
+  <li class="services-item-button">
+    <div class="block-div">
+      <a class="button-block">Гарантия</a>
+    </div>
+  </li>
+  <li class="services-item-button">
+    <div class="block-div">
+      <a class="button-block">Кредит</a>
+    </div></li>
 </ul>
+<div class="services-item-delivery">
 <h2>Доставка</h2>
 <p>
   Мы с удовольствием доставим ваш товар прямо к вашему <br>
@@ -134,114 +150,121 @@
   заработаем, поднимая его на ваш этаж.
 </p>
 <img src="img/delivery.svg" width="156" height="188" alt="Доставка иконка">
+</div>
 </section>
 <section>
-  <img src="img/dji-logo.png" width="260" height="100" alt="DJI лого">
-  <img src="img/spgadget-logo.png" width="260" height="100" alt="SP Gadgets лого">
-  <img src="img/gopro-logo.png" width="260" height="100" alt="Go Pro лого">
-  <img src="img/vive-logo.png" width="260" height="100" alt="vive лого">
+  <a href="#" class="provider-dji">
+   <img src="img/dji-logo.png" width="260" height="100" alt="DJI лого">
+  </a>
+  <a href="#" class="provider-spgadget">
+    <img src="img/spgadget-logo.png" width="260" height="100" alt="SP Gadgets лого">
+  </a>
+  <a href="#" class="provider-gopro">
+    <img src="img/gopro-logo.png" width="260" height="100" alt="Go Pro лого">
+  </a>
+  <a href="#" class="provider-vive">
+    <img src="img/vive-logo.png" width="260" height="100" alt="vive лого">
+  </a>
 </section>
-<section>
+<section class="about-us">
   <h2>О нас</h2>
- <p>
+ <p class="about-us-text">
   Огромный выбор гаджетов не оставит равнодушным гика, <br>
   который есть в каждом из нас.
  </p>
- <p>
+ <p class="about-us-delivery">
   Мы можем доставить ваш товар в самые отдаленные точки <br>
   России! DEVICE работает со многими транспортными компаниями:
  </p>
- <ul>
+ <ul class="delivery-company">
   <li>Деловые линии</li>
   <li>Автотрейдинг</li>
   <li>ЖелДорЭкспедиция</li>
  </ul>
- <a>Подробнее о нас</a>
+ <a class="button-more-about-us">Подробнее о нас</a>
 </section>
-<section>
+<section class="contacts">
   <h2>Контакты</h2>
- <p>
+ <p class="contacts-text"> 
   Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
   проверить работоспособность покупки. Всякое бывает.
  </p>
  <img src="img/map-office.png" width="560" height="222" alt="Карта с адресом офиса">
- <p><a>Напишите нам</a></p>
+ <p>
+   <a class="button-write-to-us">Напишите нам</a>
+ </p>
 </section>
 <section>
- <form action="https://echo.htmlacademy.ru" method="post">
+ <form class="send-message-form" action="https://echo.htmlacademy.ru" method="post">
   <img src="img/close-button.png" width="20" height="20" alt="иконка закрыть форму">
  <p>
    <label>Ваше имя:
-     <input type="text" name="name-submit" placeholder="Имя Фамилия">
+     <input class="send-message-item" type="text" name="name-submit" placeholder="Имя Фамилия">
    </label>
  </p> 
  <p> 
    <label>Ваш e-mail:
-     <input type="email" name="email" placeholder="email@example.com">
+     <input class="send-message-item" type="email" name="email" placeholder="email@example.com">
    </label>
  </p>
  <p>
   <label> Текст письма:
-    <textarea name="text" rows="6" cols="75">
+    <textarea class="message-text" name="text" rows="6" cols="75">
      В свободной форме
     </textarea>
   </label>
  </p>
- <input type="submit" value="Отправить">
+ <input class="button-send-message" type="submit" value="Отправить">
  </form>
 </section>
 </main>
-<footer>
-  <a href="#top">
+<footer class="main-footer">
+  <a class="main-footer-logo" href="#top">
     <img src="img/device-logo-yellow.png" alt="логотип device желтый" width="163" height="35">
   </a>
-  <address id="contacts">Санкт-Петербург, набережная <br> <!--якорь для ссылки Контакты в Header-->
+  <address class="footer-adress" id="contacts">Санкт-Петербург, набережная <br> <!--якорь для ссылки Контакты в Header-->
    реки Карповки, 5, литера П.
   </address>
-  <ul>
+  <ul class="footer-link-list">
     <li>
       <img src="img/login-yellow-ico.svg" alt="иконка войти желтая" width="8" height="9">
-      <a href="#">Войти</a>
+      <a class="footer-link-list-item" href="#">Войти</a>
     </li>
     <li>
       <img src="img/compare-yellow-ico.svg" alt="иконка сравнить желтая" width="8" height="8">
-      <a href="#">Сравнить</a>
+      <a class="footer-link-list-item" href="#">Сравнить</a>
     </li>
     <li>
       <img src="img/basket-yellow-ico.svg" alt="иконка корзина желтая" width="10" height="10">
-      <a href="#">Корзина</a>
+      <a class="footer-link-list-item" href="#">Корзина</a>
     </li>
   </ul>
-  <nav>
-    <ul>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="">Контакты</a></li>
+  <nav class="footer-navigation">
+    <ul class="footer-navigation-list">
+      <li><a class="footer-navigation-item" href="">Доставка</a></li>
+      <li><a class="footer-navigation-item" href="">Гарантия</a></li>
+      <li><a class="footer-navigation-item" href="">Контакты</a></li>
     </ul>
   </nav>
-  <a href="tel:+78005558628">+7-800-555-86-28</a>
+  <a class="footer-phone" href="tel:+78005558628">+7-800-555-86-28</a>
   <ul class="social-list">
-    <li>
+    <li class="social-item">
       <a href="#">
-        Facebook
         <img src="img/facebook-ico.svg" alt="ссылка на странице device в facebook" width="32" height="32">
       </a>
     </li>
-    <li>
+    <li class="social-item">
       <a href="#">
-        Instagram
         <img src="img/instagram-ico.svg" alt="ссылка на странице device в instagram" width="32" height="32">
       </a>
     </li>
-    <li>
+    <li class="social-item">
       <a href="#">
-        Twitter
         <img src="img/twitter-ico.svg" alt="ссылка на странице device в twitter" width="32" height="32">
       </a>
     </li>
   </ul>
-  <a href="https://htmlacademy.ru">
-    HTML academy
+  <a class="site-developer" href="https://htmlacademy.ru">
     <img src="img/logo_htmlacademy.png" alt="ссылка на страницу разработчика сайта Device" width="115" height="33">
   </a>
 </footer>

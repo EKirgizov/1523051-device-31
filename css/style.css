@@ -1,0 +1,607 @@
+@font-face {
+    font-family: "opensans";
+    font-style: normal;
+    src: local("opensans"),
+         url("opensans.woff2") format("woff2"),
+         url("opensans.woff") format("woff");
+  }
+  @font-face {
+    font-family: "gilroyextrabold";
+    font-style: normal;
+    src: local("../fonts/gilroyextrabold"),
+         url("../fonts/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroyextrabold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "gilroylight";
+    font-style: normal;
+    src: local("../fonts/gilroylight"),
+         url("../fonts/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroylight.woff") format("woff");
+  }
+  :root {
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-white: #ffffff;
+    --basic-grey: #464646;
+    --basic-half-grey: #7E7E7E;
+    --basic-grey-light: #E5E5E5;
+    --special-yellow: #F7E296;
+    --special-green: #91C92F;
+    --special-yellow-dark: #F0C52E;
+  }
+  a {
+    text-decoration: none;
+  }
+  .element-invisible {
+      display:none;
+    }
+  .main-header {
+      background-color:var(--special-yellow);
+    }
+    .main-header-logo img:hover{
+        opacity: .6;
+    }
+    .main-header-logo img:active{
+        opacity: .3;
+    }
+
+    .main-header-search input[type="text"]{
+        font-family: "Open Sans";
+        font-weight:300;
+        font-size: 15px;
+        color:var(--basic-black);
+        line-height: 20px;
+        vertical-align: middle;
+        opacity: .3;
+        background-color:var(--special-yellow);
+        border:none;
+    }
+
+    .main-header-search input[type="text"]:hover{
+        opacity: .6;
+    }
+
+    .main-header-search input[type="text"]:focus{
+        color:var(--special-yellow);
+    }
+    .site-navigation,
+    .header-link-list li,
+    .submenu,
+    .product-category,
+    .services-list,
+    .footer-link-list,
+    .footer-navigation-list,
+    .social-list{
+        list-style: none;
+    }
+
+    .site-navigation a{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;
+    }
+    .site-navigation a:hover{
+        opacity: .6;
+    }
+    .dsite-navigation a:active{
+        opacity: .3;
+    }
+    .submenu a{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-black);
+        text-transform:none;
+    }
+    .header-link-list-item{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-black);
+        text-transform:none;
+    }
+    .header-link-list-item:hover{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-black);
+        text-transform:none;
+        opacity: .6;
+    }
+    .header-link-list-item:active{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-black);
+        text-transform:none;
+        opacity: .3;
+    }
+
+    .slider-numeration {
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 179px;
+        color:var(--basic-white);
+        line-height: 219px;
+        text-transform:uppercase;
+    }
+
+    .slider-item-tagline {
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 47px;
+        color:var(--basic-black);
+        line-height: 58px;
+        text-transform:none;
+    }
+    .slider-item-description{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;   
+    }
+    .button-more-about-product{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+        letter-spacing: 0.2em;
+        text-transform:uppercase;
+    }
+    
+    .about-product-indicator{
+        font-family: "gilroylight";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.1em;
+        color:var(--basic-black);
+    }
+    .about-product-indicator-name{
+        font-family: "gilroylight";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color:var(--basic-black);
+    }
+    .product-item h3{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color:var(--basic-black);
+    }
+    .product-item a{
+        text-decoration: none;
+    }
+    .block-vr{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow);
+        background-image: url("../img/vr-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-vr:hover {
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        background-image: url("../img/vr-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      .block-vr:active {
+        background-image: url("../img/vr-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        opacity: .3;
+      }
+      .block-monopod{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow);
+        background-image: url("../img/monopod-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-monopod:hover{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        background-image: url("../img/monopod-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      .block-actioncam{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow);
+        background-image: url("../img/actioncam-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-actioncam:hover{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        background-image: url("../img/actioncam-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-fitness{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow);
+        background-image: url("../img/fitness-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-fitness:hover{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        background-image: url("../img/fitness-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      .block-smart-watch{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow);
+        background-image: url("../img/smart-watch-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-smart-watch:hover{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        background-image: url("../img/smart-watch-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-qadcopter{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow);
+        background-image: url("../img/qadcopter-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .block-qadcopter:hover{
+        display: inline-block;
+        width: 160px;
+        height: 160px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        background-image: url("../img/qadcopter-ico.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      }
+      /*с этого места начинается моя неудачная попытка сделать кнопки с желтой линией по середине, 
+      переходящей в желтый прямоугольник, затем в черный, сделал то, на что пока способен*/
+      .block-div{
+        display: inline-block;
+        width: 160px;
+        height: 40px; 
+        border-radius: none;
+        width: 160px;
+        height: 8px; 
+        background-color:var(--special-yellow-dark);
+      }
+      .button-block{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;
+        text-align: center;
+        vertical-align: middle;
+
+        
+      }
+      .block-div:hover{
+        display: inline-block;
+        width: 160px;
+        height: 40px; 
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+      }
+
+      .services-item-delivery h2,
+      .about-us h2,
+      .contacts h2{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 47px;
+        color:var(--basic-black);
+        line-height: 58px;
+        letter-spacing:0.2em;
+      }
+
+      .services-item-delivery p{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 15px;
+        color:var(--basic-black);
+        line-height: 30px;
+        letter-spacing:0.1em;
+        text-transform:none;
+      }
+      .provider-dji:hover{
+        display: inline-block;
+        width: 260px;
+        height: 100px; 
+        border-radius: none;
+        background-image: url("../img/dji-logo-color.jpg");
+    }
+    .provider-spgadget:hover{
+        display: inline-block;
+        width: 260px;
+        height: 100px; 
+        border-radius: none;
+        background-image: url("../img/spgadget-logo-color.jpg");
+    }
+    .provider-gopro:hover{
+        display: inline-block;
+        width: 260px;
+        height: 100px; 
+        border-radius: none;
+        background-image: url("../img/gopro-logo-color.jpg");
+    }
+    .provider-vive:hover{
+        display: inline-block;
+        width: 260px;
+        height: 100px; 
+        border-radius: none;
+        background-image: url("../img/vive-logo-color.jpg");
+    }
+
+    .about-us-text,
+    .about-us-delivery,
+    .contacts-text{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 15px;
+        color:var(--basic-black);
+        line-height: 28px;
+        letter-spacing:0.1em;
+        text-transform:none;  
+    }
+    .delivery-company{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 16px;
+        color:var(--basic-black);
+        line-height: 28px;
+      }
+
+    .button-more-about-us,
+    .button-write-to-us{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;  
+    }
+    .main-footer {
+        background-color:var(--basic-dark);
+      }
+
+    .main-footer-logo img:hover{
+        opacity: .6;
+    }
+    .mmain-footer-logo img:active{
+        opacity: .3;
+    }
+    .footer-adress{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-white);
+    }
+    .footer-navigation-list a{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-white);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;
+    }
+    .footer-navigation-list a:hover{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-white);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;
+        opacity: .6;
+    }
+
+    .footer-navigation-list a:active{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-white);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;
+        opacity: .3;
+    }
+
+
+    .footer-link-list-item{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-white);
+        opacity: .7;
+        text-transform:none;
+    }
+    .footer-link-list-item:hover{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-white);
+        text-transform:none;
+        
+    }
+    .footer-link-list-item:active{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-white);
+        text-transform:none;
+        opacity: .3;
+    }
+
+    .footer-phone{
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 20px;
+        color:var(--basic-white);
+        text-transform:none;   
+    }
+    .site-developer:hover{
+        opacity: .6;
+    }
+    .site-developer:active{
+        opacity: .3;
+    }
+    .social-item{
+        opacity: .3;  
+    }
+    .social-item:hover{
+        opacity: .6;
+    }
+    .social-item:active{
+        opacity: .1;
+    }
+    .send-message-form{
+        width: 960px;
+        height: 550px;
+        background-color:var(--basic-white);
+        box-shadow: 0px 10px 16px;
+    }
+    .send-message-form label{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+    }
+    .send-message-form input[type="text"],
+    .send-message-form input[type="email"]{
+        width: 360px;
+        height: 50px;
+        background-color:#F2F2F2;
+        border:none;
+    }
+    .send-message-form textarea{
+        width: 760px;
+        height: 167px;
+        background-color:#F2F2F2;
+        border:none;
+    }
+    /* вопрос по оформлению кнопки для отправки формы
+    .button-send-message{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;}
+
+   
+    
+
