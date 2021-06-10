@@ -30,7 +30,7 @@
     --special-green: #91C92F;
     --special-yellow-dark: #F0C52E;
   }
-  a {
+   a {
     text-decoration: none;
   }
   .element-invisible {
@@ -72,7 +72,14 @@
     .services-list,
     .footer-link-list,
     .footer-navigation-list,
-    .social-list{
+    .social-list,
+    .catalog-navigation-list,
+    .catalog-filter-cost ul,
+    .catalog-filter-color ul,
+    .catalog-filter-bluetooth ul,
+    .sorting-list,
+    .catalog-products-list ul,
+    .numeration-catalog-list{
         list-style: none;
     }
 
@@ -158,6 +165,16 @@
         font-size: 15px;
         line-height: 20px;   
     }
+    /*                                проба кнопки                               */
+    .block-for-button-about-product{
+        display: block;
+        width: 200px;
+        height: 8px;
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        position: relative;
+    }
+
     .button-more-about-product{
         text-decoration: none;
         font-family: "gilroyextrabold";
@@ -166,7 +183,21 @@
         line-height: 22px;
         letter-spacing: 0.2em;
         text-transform:uppercase;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
     }
+    .block-for-button-about-product:hover{
+        width: 200px;
+        height: 40px;
+    }
+    .block-for-button-about-product:active{
+        opacity: .3;
+    }
+
     
     .about-product-indicator{
         font-family: "gilroylight";
@@ -347,14 +378,14 @@
       }
       /*с этого места начинается моя неудачная попытка сделать кнопки с желтой линией по середине, 
       переходящей в желтый прямоугольник, затем в черный, сделал то, на что пока способен*/
-      .block-div{
-        display: inline-block;
+      .block-p-for-button{
+        display: block;
         width: 160px;
-        height: 40px; 
+        height: 8px;
         border-radius: none;
-        width: 160px;
-        height: 8px; 
         background-color:var(--special-yellow-dark);
+        position: relative;
+        
       }
       .button-block{
         text-decoration: none;
@@ -364,17 +395,18 @@
         line-height: 22px;
         letter-spacing:0.2em;
         text-transform:uppercase;
-        text-align: center;
-        vertical-align: middle;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
 
         
       }
-      .block-div:hover{
-        display: inline-block;
+      .block-p-for-button:hover{
         width: 160px;
         height: 40px; 
-        border-radius: none;
-        background-color:var(--special-yellow-dark);
       }
 
       .services-item-delivery h2,
@@ -447,6 +479,14 @@
         line-height: 28px;
       }
 
+      .block-for-button-au-wtu{
+        display: block;
+        width: 260px;
+        height: 8px;
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        position: relative;
+    }
     .button-more-about-us,
     .button-write-to-us{
         text-decoration: none;
@@ -456,7 +496,22 @@
         line-height: 22px;
         letter-spacing:0.2em;
         text-transform:uppercase;  
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
     }
+    
+    .block-for-button-au-wtu:hover{
+        width: 260px;
+        height: 40px;
+    }
+    .block-for-button-au-wtu:active{
+        opacity: .3;
+    }
+ 
     .main-footer {
         background-color:var(--basic-dark);
       }
@@ -600,7 +655,178 @@
         color:var(--basic-black);
         line-height: 22px;
         letter-spacing:0.2em;
-        text-transform:uppercase;}
+        text-transform:uppercase;}*/
+    
+    .catalog-navigation-item{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color:var(--basic-black);
+        opacity: .3;
+    }   
+    .catalog-navigation-item:hover{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color:var(--basic-black);
+        opacity: .6;
+    }  
+    .catalog-navigation-item:active{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color:var(--basic-black);
+        opacity: .1;
+    }
+    .catalog-filter{
+        font-family: "gilroyextrabold";
+        font-style: normal;
+        letter-spacing: 0.1em;
+        color:var(--basic-black); 
+    }
+    .catalog-filter legend{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .catalog-filter h3{
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        }
+    .catalog-filter-color label,
+    .catalog-filter-bluetooth label{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        color:var(--basic-black);
+    }
+    .sorting h3{
+        font-family: "gilroyextrabold";
+        font-style: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .sorting-list-item{
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        opacity: .3;
+        color:var(--basic-black);
+    }
+    .sorting-list-item:hover{
+        opacity: .6;
+    }
+    .sorting-list-item:hover{
+            opacity:none;
+    }
+    .catalog-products-list-item h4 {
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color:var(--basic-black);
+    }
+    .catalog-products-list-item-cost{
+        font-family: "gilroylight";
+        font-style: normal;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+    }
+    .block-for-button-filter-send{
+        display: block;
+        width: 200px;
+        height: 8px;
+        border-radius: none;
+        background-color:var(--special-yellow-dark);
+        position: relative;
+    }
+    .button-filter-send{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 18px;
+        color:var(--basic-black);
+        line-height: 22px;
+        letter-spacing:0.2em;
+        text-transform:uppercase;  
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .block-for-button-filter-send:hover{
+        width: 200px;
+        height: 40px;
+    }
+    .block-for-button-filter-send:active{
+        opacity: .3;
+    }
+
+    .block-button-fwd,
+    .block-button-back
+    {
+        display: block;
+        width: 120px;
+        height: 70px;
+        border-radius: none;
+        background-color:#EBEBEB;
+        position: relative;
+      }
+
+      .button-fwd,
+      .button-back{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 16px;
+        color:var(--basic-black);
+        line-height: 20px;
+        letter-spacing:0.1em;
+        text-transform:uppercase;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
+    }
+    .block-button-fwd:hover,
+    .block-button-back:hover{
+        background-color:#D9D9D9;
+  }
+  .block-button-fwd:active,
+    .block-button-back:active{
+        opacity: .3;
+  }
+
+
+    .numeration-catalog-list-item{
+        text-decoration: none;
+        font-family: "gilroyextrabold";
+        font-size: 16px;
+        color:var(--basic-black);
+        line-height: 20px;
+        letter-spacing:0.1em;
+        text-transform:uppercase;
+    }
+        
+    
 
    
     
