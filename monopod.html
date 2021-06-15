@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="inner-page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -10,51 +10,58 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normolize.css" rel="stylesheet">
   </head>
-  <body>
-<header class="main-header">
-    <a class="main-header-logo" href="index.html">
-        <h1 class="element-invisible">Device</h1> <!--необходимо в дальнейшем скрыть-->
-        <img src="img/device-logo-black.png" alt="логотип device черный" id="top" width="163" height="35"><!--якорь для ссылки Device в footer-->
-      </a>
-        <form class="main-header-search" action="#" method="get">
-          <img src="img/search-ico.svg" alt="иконка поиск по сайту" width="13" height="13">
-            <input type="text" placeholder="Поиск по сайту"> 
-        </form>
-      <ul class="header-link-list">
-        <li>
-          <img src="img/login-black-ico.svg" alt="иконка войти черная" width="8" height="9">
-          <a class="header-link-list-item" href="#">Войти</a>
-        </li>
-        <li>
-          <img src="img/compare-black-ico.svg" alt="иконка сравнить черная" width="8" height="8">
-          <a class="header-link-list-item" href="#">Сравнить</a>
-        </li>
-        <li>
-          <img src="img/basket-black-ico.svg" alt="иконка корзина черная" width="10" height="10">
-          <a class="header-link-list-item" href="#">Корзина</a>
-        </li>
-      </ul>
-  <nav class="main-navigation">
-    <ul class="site-navigation">
-        <li>
-          <a href="#" class="down-submenu">Каталог товаров</a>
-          <img src="img/sub-menu-ico.png" alt="иконка открыть субменю" width="15" height="15">
-        <ul class="submenu">
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="monopod.html">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
-        </ul>
-        </li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-  </nav>
-</header>
-<main>
+  <body class="inner-page-body">
+    <header class="main-header">
+        <a class="main-header-logo" href="index.html">
+          <h1 class="element-invisible">Device</h1> <!--необходимо в дальнейшем скрыть-->
+          <img src="img/device-logo-black.png" alt="логотип device черный" id="top" width="163" height="35"><!--якорь для ссылки Device в footer-->
+        </a>
+          <div class="custom-navigation">
+            <form class="main-header-search" action="#" method="get">
+              <img src="img/search-ico.svg" alt="иконка поиск по сайту" width="13" height="13">
+              <input type="text" placeholder="Поиск по сайту"> 
+            </form>
+          <ul class="header-link-list">
+            <li>
+              <img src="img/login-black-ico.svg" alt="иконка войти черная" width="8" height="9">
+              <a class="header-link-list-item" href="#">Войти</a>
+            </li>
+            <li>
+              <img src="img/compare-black-ico.svg" alt="иконка сравнить черная" width="8" height="8">
+              <a class="header-link-list-item" href="#">Сравнить</a>
+            </li>
+            <li>
+              <img src="img/basket-black-ico.svg" alt="иконка корзина черная" width="10" height="10">
+              <a class="header-link-list-item" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li class="down-submenu">
+              <a href="#">Каталог товаров</a>
+              <img src="img/sub-menu-ico.png" alt="иконка открыть субменю" width="15" height="15">
+              <ul class="submenu">
+                <li><a href="#">Виртуальная реальность</a></li>
+               <li><a href="monopod.html">Моноподы для селфи</a></li>
+               <li><a href="#">Экшн-камеры</a></li>
+               <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+             </ul>
+            </li>
+              <div class="other-site-navigation">
+                <ul>
+                  <li><a href="">Доставка</a></li>
+                  <li><a href="">Гарантия</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                </ul>
+              </div>
+          </ul>
+        </nav>
+      </header>
+<main class="inner-page-main">
+    <h2 class="selected-category">Моноподы для селфи</h2> 
     <nav class="catalog-navigation">
      <ul class="catalog-navigation-list">
         <li>
@@ -120,8 +127,10 @@
             <p class="block-for-button-filter-send">
                 <a class="button-filter-send" href="#">Показать</a>
             </p>
-     </form>
-     <section class="sorting">
+       </form>
+ </section> 
+ <div class="results-of-sorts">
+    <section class="sorting">
          <h3>Сортировка:</h3>
          <ul class="sorting-list">
              <li class="sorting-list-item">По цене</li>
@@ -130,10 +139,9 @@
          </ul>
          <img src="img/up-arrow.svg" alt="иконка сортировка по возрастанию " width="10" height="11">
          <img src="img/down-arrow.svg" alt="иконка сортировка по убыванию" width="10" height="11">
-     </section>
- </section>
- <section class="catalog-products-list">
-     <ul>
+    </section>
+    <section class="catalog-products-list">
+     <ul class="product-list-results">
          <li class="catalog-products-list-item">
              <a href="#">
              <h4>Любительская селфи-палка</h4>
@@ -180,10 +188,10 @@
             </p>
         </li>
     </ul>
-</section>
-<section>
-    <p class="block-button-fwd">
-        <a class="button-fwd" href="#">назад</a>
+ </section>
+ <section class="block-buttom-back-fwd">
+    <p class="block-button-back">
+        <a class="button-back" href="#">назад</a>
     </p>
     <ul class="numeration-catalog-list">
         <li>
@@ -196,10 +204,11 @@
             <a class="numeration-catalog-list-item" href="#">3</a>
         </li>
     </ul>
-    <p class="block-button-back">
-        <a class="button-back" href="#">вперед</a>
+    <p class="block-button-fwd">
+        <a class="button-fwd" href="#">вперед</a>
     </p>
-</section>
+ </section>
+</div>
 </main>
 <footer class="main-footer">
     <a class="main-footer-logo" href="#top">
