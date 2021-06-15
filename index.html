@@ -17,70 +17,79 @@
     <h1 class="element-invisible">Device</h1> <!--необходимо в дальнейшем скрыть-->
     <img src="img/device-logo-black.png" alt="логотип device черный" id="top" width="163" height="35"><!--якорь для ссылки Device в footer-->
   </a>
-    <form class="main-header-search" action="#" method="get">
-      <img src="img/search-ico.svg" alt="иконка поиск по сайту" width="13" height="13">
+    <div class="custom-navigation">
+      <form class="main-header-search" action="#" method="get">
+        <img src="img/search-ico.svg" alt="иконка поиск по сайту" width="13" height="13">
         <input type="text" placeholder="Поиск по сайту"> 
-    </form>
-  <ul class="header-link-list">
-    <li>
-      <img src="img/login-black-ico.svg" alt="иконка войти черная" width="8" height="9">
-      <a class="header-link-list-item" href="#">Войти</a>
-    </li>
-    <li>
-      <img src="img/compare-black-ico.svg" alt="иконка сравнить черная" width="8" height="8">
-      <a class="header-link-list-item" href="#">Сравнить</a>
-    </li>
-    <li>
-      <img src="img/basket-black-ico.svg" alt="иконка корзина черная" width="10" height="10">
-      <a class="header-link-list-item" href="#">Корзина</a>
-    </li>
-  </ul>
+      </form>
+    <ul class="header-link-list">
+      <li>
+        <img src="img/login-black-ico.svg" alt="иконка войти черная" width="8" height="9">
+        <a class="header-link-list-item" href="#">Войти</a>
+      </li>
+      <li>
+        <img src="img/compare-black-ico.svg" alt="иконка сравнить черная" width="8" height="8">
+        <a class="header-link-list-item" href="#">Сравнить</a>
+      </li>
+      <li>
+        <img src="img/basket-black-ico.svg" alt="иконка корзина черная" width="10" height="10">
+        <a class="header-link-list-item" href="#">Корзина</a>
+      </li>
+    </ul>
+  </div>
   <nav class="main-navigation">
     <ul class="site-navigation">
-      <li>
-        <a href="#" class="down-submenu">Каталог товаров</a>
+      <li class="down-submenu">
+        <a href="#">Каталог товаров</a>
         <img src="img/sub-menu-ico.png" alt="иконка открыть субменю" width="15" height="15">
-      <ul class="submenu">
-        <li><a href="#">Виртуальная реальность</a></li>
-        <li><a href="monopod.html">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a></li>
-        <li><a href="#">Фитнес-браслеты</a></li>
-        <li><a href="#">Умные часы</a></li>
-        <li><a href="#">Квадрокоптеры</a></li>
-      </ul>
+        <ul class="submenu">
+          <li><a href="#">Виртуальная реальность</a></li>
+         <li><a href="monopod.html">Моноподы для селфи</a></li>
+         <li><a href="#">Экшн-камеры</a></li>
+         <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
+       </ul>
       </li>
-      <li><a href="">Доставка</a></li>
-      <li><a href="">Гарантия</a></li>
-      <li><a href="#contacts">Контакты</a></li>
+        <div class="other-site-navigation">
+          <ul>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Гарантия</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
     </ul>
   </nav>
 </header>
 <main>
-<section class="slider">
-  <figure>
-  <a href="#">
-    <img src="img/slider-quadrocopter-inspire.png" width="526" height="334" alt="Квадрокоптер инспайр в карусели">
-  </a>
-  </figure>
-  <h3 class="slider-numeration">01</h3>
-  <h3 class="slider-item-tagline">Порхает как бабочка,<br> жалит как пчела!</h3> 
-  <p class="slider-item-description">
-    Этот обычный, на первый взгляд, квадрокоптер <br> оснащен мощным лазером, замаскированным под стандартную камеру.
-  </p>
-<div class="block-for-button-about-product">
-  <h3 class="button-more-about-product">Подробнее</h3>
+<div class="slider">
+  <div class="slider-picture">
+     <a href="#">
+      <img src="img/slider-quadrocopter-inspire.png" width="526" height="334" alt="Квадрокоптер инспайр в карусели">
+    </a>
+  </div>
+  <div class="slider-main-description"> 
+    <h3 class="slider-numeration">01</h3>
+    <h3 class="slider-item-tagline">Порхает как бабочка,<br> жалит как пчела!</h3> 
+    <p class="slider-item-description">
+      Этот обычный, на первый взгляд, квадрокоптер <br> оснащен мощным лазером, замаскированным под стандартную камеру.
+    </p>
+    <div class="block-for-button-about-product">
+     <h3 class="button-more-about-product">Подробнее</h3>
+    </div>
+    <table class="slider-item-characteristics">
+      <tr class="about-product-indicator">
+       <td>800 м</td>
+        <td>50 м</td>
+      </tr>
+      <tr class="about-product-indicator-name">
+        <td>Дальность полета</td>
+        <td>Радиус поражения</td>
+     </tr>
+    </table>
+  </div>
 </div>
-  <table>
-    <tr class="about-product-indicator">
-      <td>800 м</td>
-      <td>50 м</td>
-    </tr>
-    <tr class="about-product-indicator-name">
-      <td>Дальность полета</td>
-      <td>Радиус поражения</td>
-    </tr>
-  </table>
-</section>
+
 <section class="product">
   <ul class="product-category">
     <li class="product-item">
@@ -129,33 +138,37 @@
   </ul>
 </section>
 <section class="services">
-<ul class="services-list">
-  <li class="services-item-button">
-    <p class="block-p-for-button">
-      <a class="button-block">Доставка</a>
+  <div class="services-list-container">
+    <ul class="services-list">
+      <li class="services-item-button">
+      <p class="block-p-for-button">
+         <a class="button-block">Доставка</a>
+      </p>
+     </li>
+      <li class="services-item-button">
+       <p class="block-p-for-button">
+          <a class="button-block">Гарантия</a>
+        </p>
+      </li>
+      <li class="services-item-button">
+        <p class="block-p-for-button">
+        <a class="button-block">Кредит</a>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="services-item-delivery">
+    <h2>Доставка</h2>
+    <p>
+      Мы с удовольствием доставим ваш товар прямо к вашему <br>
+      подъезду совершенно бесплатно! Ведь мы неплохо <br>
+      заработаем, поднимая его на ваш этаж.
     </p>
-  </li>
-  <li class="services-item-button">
-    <p class="block-p-for-button">
-      <a class="button-block">Гарантия</a>
-    </p>
-  </li>
-  <li class="services-item-button">
-    <p class="block-p-for-button">
-      <a class="button-block">Кредит</a>
-    </p></li>
-</ul>
-<div class="services-item-delivery">
-<h2>Доставка</h2>
-<p>
-  Мы с удовольствием доставим ваш товар прямо к вашему <br>
-  подъезду совершенно бесплатно! Ведь мы неплохо <br>
-  заработаем, поднимая его на ваш этаж.
-</p>
-<img src="img/delivery.svg" width="156" height="188" alt="Доставка иконка">
-</div>
+    <img src="img/delivery.svg" width="156" height="188" alt="Доставка иконка">
+  </div>
 </section>
-<section>
+
+<section class="provider-container">
   <a href="#" class="provider-dji">
    <img src="img/dji-logo.png" width="260" height="100" alt="DJI лого">
   </a>
@@ -169,57 +182,62 @@
     <img src="img/vive-logo.png" width="260" height="100" alt="vive лого">
   </a>
 </section>
-<section class="about-us">
-  <h2>О нас</h2>
- <p class="about-us-text">
-  Огромный выбор гаджетов не оставит равнодушным гика, <br>
-  который есть в каждом из нас.
- </p>
- <p class="about-us-delivery">
-  Мы можем доставить ваш товар в самые отдаленные точки <br>
-  России! DEVICE работает со многими транспортными компаниями:
- </p>
- <ul class="delivery-company">
-  <li>Деловые линии</li>
-  <li>Автотрейдинг</li>
-  <li>ЖелДорЭкспедиция</li>
- </ul>
- <p class="block-for-button-au-wtu">
-   <a class="button-more-about-us">Подробнее о нас</a>
- </p>
-</section>
-<section class="contacts">
-  <h2>Контакты</h2>
- <p class="contacts-text"> 
-  Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
-  проверить работоспособность покупки. Всякое бывает.
- </p>
- <img src="img/map-office.png" width="560" height="222" alt="Карта с адресом офиса">
- <p class="block-for-button-au-wtu">
-   <a class="button-write-to-us">Напишите нам</a>
- </p>
-</section>
+<div class="abot-us-and-map-container">
+  <section class="about-us">
+      <h2>О нас</h2>
+      <p class="about-us-text">
+        Огромный выбор гаджетов не оставит равнодушным гика, <br>
+        который есть в каждом из нас.
+      </p>
+      <p class="about-us-delivery">
+        Мы можем доставить ваш товар в самые отдаленные точки <br>
+        России! DEVICE работает со многими транспортными компаниями:
+      </p>
+      <ul class="delivery-company">
+        <li>Деловые линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+      </ul>
+      <p class="block-for-button-au-wtu">
+        <a class="button-more-about-us">Подробнее о нас</a>
+      </p>
+  </section>
+  <section class="contacts">
+    <h2>Контакты</h2>
+    <p class="contacts-text"> 
+      Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
+      проверить работоспособность покупки. Всякое бывает.
+    </p>
+    <img src="img/map-office.png" width="560" height="222" alt="Карта с адресом офиса">
+    <p class="block-for-button-au-wtu">
+      <a class="button-write-to-us">Напишите нам</a>
+    </p>
+  </section>
+</div>
 <section>
  <form class="send-message-form" action="https://echo.htmlacademy.ru" method="post">
-  <img src="img/close-button.png" width="20" height="20" alt="иконка закрыть форму">
- <p>
-   <label>Ваше имя:
+  <div class="send-message-form-container">
+  <img class="close-form-button" src="img/close-button.png" width="20" height="20" alt="иконка закрыть форму">
+ 
+  <p class="name-surname-form">
+   <label>Ваше имя:<br>
      <input class="send-message-item" type="text" name="name-submit" placeholder="Имя Фамилия">
    </label>
- </p> 
- <p> 
-   <label>Ваш e-mail:
+  </p> 
+  <p class="email-form"> 
+   <label>Ваш e-mail:<br>
      <input class="send-message-item" type="email" name="email" placeholder="email@example.com">
    </label>
- </p>
- <p>
-  <label> Текст письма:
-    <textarea class="message-text" name="text" rows="6" cols="75">
-     В свободной форме
-    </textarea>
-  </label>
- </p>
- <input class="button-send-message" type="submit" value="Отправить">
+  </p>
+  <p class="message-form">
+   <label> Текст письма:
+     <textarea class="message-text" name="text" rows="6" cols="75">
+      В свободной форме
+     </textarea>
+   </label>
+  </p>
+  <input class="button-send-message" type="submit" value="Отправить">
+  </div>
  </form>
 </section>
 </main>
@@ -227,6 +245,7 @@
   <a class="main-footer-logo" href="#top">
     <img src="img/device-logo-yellow.png" alt="логотип device желтый" width="163" height="35">
   </a>
+  
   <address class="footer-adress" id="contacts">Санкт-Петербург, набережная <br> <!--якорь для ссылки Контакты в Header-->
    реки Карповки, 5, литера П.
   </address>

@@ -36,8 +36,33 @@
   .element-invisible {
       display:none;
     }
+    .page, .inner-page{
+        height:100%;
+    }
+    .main-body,.inner-body{
+        min-width:1160px;
+        margin:0px;
+        padding:0px;
+        min-height: 100%;
+        display:grid;
+        grid-template-rows:min-content 1fr min-content;
+        align-content: start;
+    }
+    .custom-navigation{
+        display:grid;
+        grid-template-columns:200px 1fr;
+    }
+    .custom-navigation ul{
+     display:grid;
+     margin:0px;
+     justify-self: end;
+    }
+
   .main-header {
       background-color:var(--special-yellow);
+    }
+    .main-header-logo img{
+        margin:5px;
     }
     .main-header-logo img:hover{
         opacity: .6;
@@ -47,6 +72,7 @@
     }
 
     .main-header-search input[type="text"]{
+        display:inline-block;
         font-family: "Open Sans";
         font-weight:300;
         font-size: 15px;
@@ -79,10 +105,15 @@
     .catalog-filter-bluetooth ul,
     .sorting-list,
     .catalog-products-list ul,
-    .numeration-catalog-list{
+    .numeration-catalog-list,
+    .other-site-navigation ul{
         list-style: none;
+        margin:0;
     }
-
+    .site-navigation{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
     .site-navigation a{
         text-decoration: none;
         font-family: "gilroyextrabold";
@@ -95,9 +126,20 @@
     .site-navigation a:hover{
         opacity: .6;
     }
-    .dsite-navigation a:active{
+    .site-navigation a:active{
         opacity: .3;
     }
+    .down-submenu{
+        display:grid;
+        grid-column: 1/2;
+    }
+    
+    .other-site-navigation{
+        display:grid;
+        grid-column: 2/3;
+        justify-self: center;
+    }
+
     .submenu a{
         text-decoration: none;
         font-family: "Open Sans";
@@ -141,12 +183,55 @@
         opacity: .3;
     }
 
+    .slider{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        height:506px;
+       margin-bottom:10px;
+    }
+    .slider-picture{
+        display:grid;
+        grid-column:1/2;
+        margin: 0 auto;
+    }
+    .slider-main-description{
+        display:grid;
+        margin: 0 auto;
+        grid-column:2/3;
+        grid-template-rows: 0px 1fr 1fr 1fr 1fr;
+    }
+    .slider-numeration{
+        display:grid;
+        grid-row:1/2;
+        margin-top: -140px;
+        justify-self: end;
+    }
+    .slider-item-tagline{
+        display:grid;
+        grid-row:2/3;
+        margin-top:-35px;
+    
+    }
+    .slider-item-description{
+        display:grid;
+        grid-row:3/4;
+        margin: 0 0;
+    }
+    .block-for-button-about-product{
+        display:grid;
+        grid-row:4/5;
+        margin: 0 0;
+    }
+    .slider-item-characteristics{
+        display:grid;
+        grid-row:5/6;
+        margin: 0 0;
+    }
     .slider-numeration {
         text-decoration: none;
         font-family: "gilroyextrabold";
         font-size: 179px;
         color:var(--basic-white);
-        line-height: 219px;
         text-transform:uppercase;
     }
 
@@ -217,6 +302,17 @@
         letter-spacing: 0.1em;
         color:var(--basic-black);
     }
+    .product-category{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 40px;
+    }
+
+    .product-category li{
+        display:grid;
+        margin: 0 auto;
+    }
+
     .product-item h3{
         text-decoration: none;
         font-family: "gilroyextrabold";
@@ -400,14 +496,28 @@
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%);
-
-        
+        transform: translate(-50%, -50%);   
       }
       .block-p-for-button:hover{
         width: 160px;
         height: 40px; 
       }
+      .services{
+          display:grid;
+          grid-template-columns: 1fr 2fr;
+      }
+      .services-list-container{
+          display: grid;
+          margin:0 auto;
+          align-self: start;
+          grid-column: 1/2;
+      }
+      .services-item-delivery{
+        display: grid;
+        margin:0 auto;
+        align-self: start;
+        grid-column: 2/3;
+    }
 
       .services-item-delivery h2,
       .about-us h2,
@@ -429,6 +539,30 @@
         line-height: 30px;
         letter-spacing:0.1em;
         text-transform:none;
+      }
+      .provider-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .provider-dji{
+        display: grid;
+        margin:0 auto;
+        grid-column: 1/2;
+      }
+      .provider-spgadget{
+        display: grid;
+        margin:0 auto;
+        grid-column: 2/3;
+      }
+      .provider-gopro{
+        display: grid;
+        margin:0 auto;
+        grid-column: 3/4; 
+      }
+      .provider-vive{
+        display: grid;
+        margin:0 auto;
+        grid-column: 4/5;
       }
       .provider-dji:hover{
         display: inline-block;
@@ -457,6 +591,20 @@
         height: 100px; 
         border-radius: none;
         background-image: url("../img/vive-logo-color.jpg");
+    }
+    .abot-us-and-map-container{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+    .about-us{
+        display:grid;
+        margin:0 auto;
+        grid-column: 1/2;
+    }
+    .contacts{
+        display:grid;
+        margin:0 auto;
+        grid-column: 2/3;;
     }
 
     .about-us-text,
@@ -514,7 +662,56 @@
  
     .main-footer {
         background-color:var(--basic-dark);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
       }
+
+    .main-footer-logo{
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: start;
+    }
+    .footer-adress{
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: start;
+    }
+
+    .footer-navigation{
+        display:grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+    .social-list{
+        display:grid;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-self: center;
+    }
+
+    .footer-link-list{
+        display:grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        justify-self: end;
+    }
+    .footer-phone{
+        display:grid;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        justify-self: end;
+    }
+    .site-developer{
+        display:grid;
+        grid-column: 3/4;
+        grid-row: 3/4;
+        justify-self: end;
+    }
+
 
     .main-footer-logo img:hover{
         opacity: .6;
@@ -621,6 +818,37 @@
     .social-item:active{
         opacity: .1;
     }
+
+    .send-message-form-container{
+        display:grid;
+        width:960px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px min-content 1fr min-content;
+        gap:40px;
+    }
+    .name-surname-form{
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .email-form{
+        display:grid;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .message-form{
+        display:grid;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .button-send-message{
+        display:grid;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        justify-self: left;
+    }
+
+
     .send-message-form{
         width: 960px;
         height: 550px;
@@ -656,8 +884,14 @@
         line-height: 22px;
         letter-spacing:0.2em;
         text-transform:uppercase;}*/
-    
-    .catalog-navigation-item{
+       
+        .selected-category{
+        font-family: "gilroyextrabold";
+        font-style: normal;
+        font-size: 47px;
+        line-height: 58px;}
+
+        .catalog-navigation-item{
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 300;
@@ -684,6 +918,61 @@
         color:var(--basic-black);
         opacity: .1;
     }
+    .inner-page-main{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .catalog-filter{
+        display:grid;
+        grid-column: 1/2;
+        margin: 0 0;
+    }
+    .results-of-sorts{
+        display:grid;
+        grid-column: 2/3;
+        margin: 0 0;
+        grid-template-rows: 70px 1fr 70px;
+    }
+
+    .sorting{
+        display:grid;
+        grid-row: 1/2;
+        margin: 0 0;
+    }
+    .catalog-products-list{
+        display:grid;
+        grid-row: 2/3;
+        margin: 0 0;
+    }
+    .block-buttom-back-fwd{
+        display:grid;
+        grid-row: 3/4;
+        margin: 0 0;
+        grid-template-columns: 120px 1fr 120px;
+    }
+    .block-button-back{
+        display:grid;
+        grid-column: 1/2;
+    }
+    .numeration-catalog-list{
+        display:grid;
+        grid-column: 2/3;
+    }
+    .block-button-fwd{
+        display:grid;
+        grid-column: 3/4;
+    }
+
+    .product-list-results{
+        display:grid;
+        margin: 0 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .product-list-results li{
+        display:grid;
+    }
+
     .catalog-filter{
         font-family: "gilroyextrabold";
         font-style: normal;
